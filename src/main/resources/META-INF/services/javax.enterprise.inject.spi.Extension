@@ -1,2 +1,2 @@
-scopes.customScope.CustomScopeExtension
-scopes.customScope.SuspendableScopeExtension
+scopes.customScope.likeAppScoped.CustomScopeExtension
+scopes.customScope.StartAndSuspendScope.SuspendableScopeExtension
