@@ -8,18 +8,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc17ee3-55e9-4daa-a0c2-dae65bbec2d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/META-INF/services/javax.enterprise.inject.spi.Extension" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/META-INF/services/javax.enterprise.inject.spi.Extension" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/beans/CustomBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/beans/CustomBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/CustomScopeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/CustomScopeContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/CustomBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/CustomBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/CustomScopeExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/CustomScopeExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/SuspendableAppScoped.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/SuspendableAppScoped.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/servlets/GreetingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/servlets/GreetingServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/SuspendableAppScoped.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/SuspendableAppScoped.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/SuspendableScopeContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/SuspendableScopeContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/SuspendableScopeExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/SuspendableScopeExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/GreetingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/GreetingServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/services/javax.enterprise.inject.spi.Extension" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/services/javax.enterprise.inject.spi.Extension" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/beans/CustomBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beans/CustomBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scopes/customScope/CustomScopeExtension.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scopes/customScope/CustomScopeExtension.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scopes/customScope/SuspendableScopeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scopes/customScope/SuspendableScopeContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scopes/customScope/SuspendableAppScoped.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scopes/customScope/SuspendableAppScoped.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlets/GreetingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlets/GreetingServlet.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

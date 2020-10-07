@@ -52,7 +52,6 @@ public class SuspendableScopeContext implements Context {
 
   @Override
   public boolean isActive() {
-    System.out.printf("isActive: %s%n", ACTIVE_SCOPE_THREAD_LOCAL.get().get());
     return ACTIVE_SCOPE_THREAD_LOCAL.get().get() != null;
   }
 
