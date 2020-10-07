@@ -1,6 +1,7 @@
 package servlets;
 
-import beans.Greeting;
+import beans.CustomBean;
+import scopes.customScope.*;
 
 import javax.inject.Inject;
 import javax.servlet.annotation.WebServlet;
@@ -12,11 +13,23 @@ import java.io.IOException;
 @WebServlet(name = "Get greeting", urlPatterns = "/greeting")
 
 public class GreetingServlet extends HttpServlet {
+  private int scopeId = 0;
+  @Inject
+  SuspendableScopeExtension cdiExt;
 
   @Inject
-  Greeting cb;
+  CustomBean cb;
 
   public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-    resp.getWriter().write(cb.greeting());
+    String msg = "QQQ";
+    SuspendableScopeContext ctx = cdiExt.getContext();
+    ctx.start(String.valueOf(scopeId++));
+    try {
+      msg = cb.greeting();
+      ctx.suspend();
+    } finally {
+      ctx.destroy(String.valueOf(scopeId));
+    }
+    resp.getWriter().write(msg);
   }
 }

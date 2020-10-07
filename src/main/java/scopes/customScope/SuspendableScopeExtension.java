@@ -1,16 +1,23 @@
 package scopes.customScope;
 
+import javax.enterprise.event.Observes;
 import javax.enterprise.inject.spi.AfterBeanDiscovery;
 import javax.enterprise.inject.spi.BeforeBeanDiscovery;
 import javax.enterprise.inject.spi.Extension;
 
 public class SuspendableScopeExtension implements Extension {
+  private SuspendableScopeContext ctx;
 
-  public void beforeBeanDiscovery(BeforeBeanDiscovery bbd) {
-    bbd.addScope(CustomAppScope.class, true, false);
+  public SuspendableScopeContext getContext() {
+    return ctx;
   }
 
-  public void afterBeanDiscovery(AfterBeanDiscovery abd) {
-    abd.addContext(new SuspendableScopeContext());
+  public void beforeBeanDiscovery(@Observes BeforeBeanDiscovery bbd) {
+    bbd.addScope(SuspendableAppScoped.class, true, false);
+  }
+
+  public void afterBeanDiscovery(@Observes AfterBeanDiscovery abd) {
+    ctx = new SuspendableScopeContext();
+    abd.addContext(ctx);
   }
 }

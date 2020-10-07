@@ -16,7 +16,7 @@ public class SuspendableScopeContext implements Context {
 
   @Override
   public Class<? extends Annotation> getScope() {
-    return CustomAppScope.class;
+    return SuspendableAppScoped.class;
   }
 
   @Override
@@ -52,6 +52,7 @@ public class SuspendableScopeContext implements Context {
 
   @Override
   public boolean isActive() {
+    System.out.printf("isActive: %s%n", ACTIVE_SCOPE_THREAD_LOCAL.get().get());
     return ACTIVE_SCOPE_THREAD_LOCAL.get().get() != null;
   }
 
@@ -60,5 +61,21 @@ public class SuspendableScopeContext implements Context {
     if (removedInstances != null) {
       removedInstances.values().forEach(BeanInstance::destroy);
     }
+  }
+
+  public void start(String scopeId) {
+    AtomicReference<String> activeScope = ACTIVE_SCOPE_THREAD_LOCAL.get();
+    if (activeScope.get() != null) {
+      throw new IllegalStateException("Scope instance already active");
+    }
+    activeScope.set(scopeId);
+  }
+
+  public void suspend() {
+    AtomicReference<String> activeScope = ACTIVE_SCOPE_THREAD_LOCAL.get();
+    if (activeScope.get() == null) {
+      throw new IllegalStateException("Scope instance already suspend");
+    }
+    activeScope.set(null);
   }
 }
