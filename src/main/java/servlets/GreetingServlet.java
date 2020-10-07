@@ -1,9 +1,12 @@
 package servlets;
 
+import beans.Greeting;
 import beans.GreetingBean;
+import beans.GreetingBean2;
 import scopes.customScope.StartAndSuspendScope.SuspendableScopeContext;
 import scopes.customScope.StartAndSuspendScope.SuspendableScopeExtension;
 
+import javax.enterprise.inject.spi.CDI;
 import javax.inject.Inject;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,18 +22,21 @@ public class GreetingServlet extends HttpServlet {
   SuspendableScopeExtension cdiExt;
 
   @Inject
-  GreetingBean cb;
+  GreetingBean greetingBean;
+
+  private Greeting greetingBean2 = CDI.current().select(GreetingBean2.class).get();
 
   public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
     String msg = "QQQ";
     SuspendableScopeContext ctx = cdiExt.getContext();
     ctx.start(String.valueOf(scopeId++));
     try {
-      msg = cb.greeting();
+      msg = greetingBean.greeting();
       ctx.suspend();
     } finally {
       ctx.destroy(String.valueOf(scopeId));
     }
-    resp.getWriter().write(msg);
+    resp.getWriter().printf("%s%n", msg);
+    resp.getWriter().printf("%s%n", greetingBean2.greeting());
   }
 }

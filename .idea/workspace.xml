@@ -7,12 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bc17ee3-55e9-4daa-a0c2-dae65bbec2d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/CustomBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/CustomBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/CustomBean2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/CustomBean2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/CustomAppScope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/likeAppScoped/CustomAppScope.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/CustomScopeContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/likeAppScoped/CustomScopeContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/CustomScopeExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/likeAppScoped/CustomScopeExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/services/javax.enterprise.inject.spi.Extension" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/javax.enterprise.inject.spi.Extension" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/beans/GreetingBean2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/beans/GreetingBean2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/servlets/GreetingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/servlets/GreetingServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/GreetingBean2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/GreetingBean2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/GreetingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/GreetingServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans/GreetingBean2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beans/GreetingBean2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlets/GreetingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlets/GreetingServlet.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
