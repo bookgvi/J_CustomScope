@@ -1,2 +1,3 @@
 scopes.customScope.likeAppScoped.CustomScopeExtension
 scopes.customScope.StartAndSuspendScope.SuspendableScopeExtension
+scopes.customScope.LearningStartSuspendScope.LSSScopeExtension

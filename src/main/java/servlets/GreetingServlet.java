@@ -3,6 +3,8 @@ package servlets;
 import beans.Greeting;
 import beans.GreetingBean;
 import beans.GreetingBean2;
+import scopes.customScope.LearningStartSuspendScope.LSSScopeContext;
+import scopes.customScope.LearningStartSuspendScope.LSSScopeExtension;
 import scopes.customScope.StartAndSuspendScope.SuspendableScopeContext;
 import scopes.customScope.StartAndSuspendScope.SuspendableScopeExtension;
 
@@ -19,7 +21,7 @@ import java.io.IOException;
 public class GreetingServlet extends HttpServlet {
   private int scopeId = 0;
   @Inject
-  SuspendableScopeExtension cdiExt;
+  LSSScopeExtension cdiExt;
 
   @Inject
   GreetingBean greetingBean;
@@ -28,7 +30,7 @@ public class GreetingServlet extends HttpServlet {
 
   public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
     String msg = "QQQ";
-    SuspendableScopeContext ctx = cdiExt.getContext();
+    LSSScopeContext ctx = cdiExt.getContext();
     ctx.start(String.valueOf(scopeId++));
     try {
       msg = greetingBean.greeting();

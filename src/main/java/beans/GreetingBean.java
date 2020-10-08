@@ -1,10 +1,11 @@
 package beans;
 
+import scopes.customScope.LearningStartSuspendScope.LSSScope;
 import scopes.customScope.StartAndSuspendScope.SuspendableAppScoped;
 
-@SuspendableAppScoped
+@LSSScope
 public class GreetingBean implements Greeting {
   public String greeting() {
-    return "Hello, from bean with Suspendable scope";
+    return "Hello, from bean with LSSScope";
   }
 }
