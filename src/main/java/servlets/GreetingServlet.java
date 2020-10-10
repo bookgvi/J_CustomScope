@@ -24,21 +24,27 @@ public class GreetingServlet extends HttpServlet {
   LSSScopeExtension cdiExt;
 
   @Inject
-  Greeting greetingBean; // В качестве типа - интерфейс Greeting
+  GreetingBean greetingBean;
 
-//  private Greeting greetingBean2 = CDI.current().select(GreetingBean2.class).get();
+  private Greeting greetingBean2 = CDI.current().select(GreetingBean2.class).get();
 
   public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-    String msg = "QQQ";
+    String msg = "QQQ", msg1="", msg2="";
+
     LSSScopeContext ctx = cdiExt.getContext();
-    ctx.start(String.valueOf(scopeId++));
+    ctx.start(String.valueOf(scopeId));
     try {
-      msg = greetingBean.greeting();
+      msg1 = String.valueOf(greetingBean.getTestID());
+      greetingBean.setTestID(11);
+
       ctx.suspend();
+      ctx.start(String.valueOf(scopeId));
+
+      msg2 = String.valueOf(greetingBean.getTestID());
     } finally {
       ctx.destroy(String.valueOf(scopeId));
     }
-    resp.getWriter().printf("%s%n", msg);
-//    resp.getWriter().printf("%s%n", greetingBean2.greeting());
+    resp.getWriter().printf("Before suspend: %s, After: %s%n", msg1, msg2);
+    resp.getWriter().printf("%s%n", greetingBean2.greeting());
   }
 }
