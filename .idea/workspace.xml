@@ -8,12 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc17ee3-55e9-4daa-a0c2-dae65bbec2d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/beans/GreetingBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/beans/GreetingBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/servlets/GreetingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/servlets/GreetingServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/GreetingBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/GreetingBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/GreetingBean2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/GreetingBean2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/GreetingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/GreetingServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/beans/GreetingBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beans/GreetingBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/LearningStartSuspendScope/LSSScopeContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/LearningStartSuspendScope/LSSScopeContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/StartAndSuspendScope/SuspendableScopeContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/StartAndSuspendScope/SuspendableScopeContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/servlets/GreetingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlets/GreetingServlet.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -230,7 +227,7 @@
       <workItem from="1602051865861" duration="13733000" />
       <workItem from="1602136102384" duration="3977000" />
       <workItem from="1602259198025" duration="929000" />
-      <workItem from="1602323780123" duration="3807000" />
+      <workItem from="1602323780123" duration="6455000" />
     </task>
     <servers />
   </component>

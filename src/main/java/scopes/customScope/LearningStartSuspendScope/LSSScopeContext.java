@@ -41,11 +41,8 @@ public class LSSScopeContext implements Context {
       throw new ContextNotActiveException();
     } else {
       String scopeId = activeScope.get();
-      Map<Contextual<?>, BeanInstance<?>> defaultMap = new HashMap<Contextual<?>, BeanInstance<?>>() {{
-        put(contextual, null);
-      }};
       @SuppressWarnings("unchecked")
-      BeanInstance<T> instance = (BeanInstance<T>) cache.getOrDefault(scopeId, defaultMap).get(contextual);
+      BeanInstance<T> instance = (BeanInstance<T>) cache.getOrDefault(scopeId, new ConcurrentHashMap<>()).get(contextual);
       if (instance != null) {
         return instance.getBean();
       }

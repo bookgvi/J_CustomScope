@@ -39,12 +39,9 @@ public class SuspendableScopeContext implements Context {
     if (scopeId == null) {
       throw new ContextNotActiveException();
     } else {
-      // В JDK 9 можно заменить на Map.of();
-      Map<Contextual<?>, BeanInstance<?>> defaultBeanInstanceMap = new HashMap<Contextual<?>, BeanInstance<?>>() {{
-        put(contextual, null);
-      }};
+      // В JDK 9 можно использовать Map.of();
       @SuppressWarnings("unchecked")
-      BeanInstance<T> instance = (BeanInstance<T>) cache.getOrDefault(scopeId, defaultBeanInstanceMap).get(contextual);
+      BeanInstance<T> instance = (BeanInstance<T>) cache.getOrDefault(scopeId, new ConcurrentHashMap<>()).get(contextual);
       if (instance != null) return instance.getInstance();
     }
     return null;
