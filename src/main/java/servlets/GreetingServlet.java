@@ -9,6 +9,7 @@ import scopes.customScope.StartAndSuspendScope.SuspendableScopeContext;
 import scopes.customScope.StartAndSuspendScope.SuspendableScopeExtension;
 
 import javax.enterprise.event.Observes;
+import javax.enterprise.event.ObservesAsync;
 import javax.enterprise.event.Reception;
 import javax.enterprise.inject.spi.CDI;
 import javax.inject.Inject;
@@ -19,9 +20,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(name = "Get greeting", urlPatterns = "/greeting")
-
 public class GreetingServlet extends HttpServlet {
   private int scopeId = 0;
+  private LSSScopeContext ctx;
   @Inject
   LSSScopeExtension cdiExt;
 
@@ -33,8 +34,8 @@ public class GreetingServlet extends HttpServlet {
   public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
     String msg = "QQQ", msg1 = "", msg2 = "", msg3;
 
-//    LSSScopeContext ctx = cdiExt.getContext();
-    LSSScopeContext ctx = greetingBean2.getLssScopeContext();
+//    ctx = cdiExt.getContext(); // Directly Injected
+    ctx = greetingBean2.getLssScopeContext(); // In GreetingBean2 we have an Observe method
     ctx.start(String.valueOf(scopeId));
     try {
       msg1 = String.valueOf(greetingBean.getTestID());
@@ -52,9 +53,5 @@ public class GreetingServlet extends HttpServlet {
     resp.getWriter().printf("%s%n", msg3);
   }
 
-  // This Observer method will not be work - cause of CDI Observes for Scoped Bean only
-  public void getCtx(@Observes(notifyObserver = Reception.IF_EXISTS) String ctx) {
-    System.out.printf("Observes ctx in 'Get greeting' Servlet: %s%n", ctx);
-  }
 
 }
