@@ -8,9 +8,24 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc17ee3-55e9-4daa-a0c2-dae65bbec2d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/beans/GreetingBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/beans/GreetingBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/beans/GreetingBean2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/beans/GreetingBean2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeContext$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeExtension.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeExtension.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/likeAppScoped/CustomScopeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/likeAppScoped/CustomScopeContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/servlets/GreetingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/servlets/GreetingServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/LearningStartSuspendScope/LSSScopeContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/LearningStartSuspendScope/LSSScopeContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/StartAndSuspendScope/SuspendableScopeContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/StartAndSuspendScope/SuspendableScopeContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/GreetingBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/GreetingBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/GreetingBean2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/GreetingBean2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/LearningStartSuspendScope/LSSScopeExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/LearningStartSuspendScope/LSSScopeExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/likeAppScoped/CustomScopeContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/likeAppScoped/CustomScopeContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/GreetingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/GreetingServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans/GreetingBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beans/GreetingBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans/GreetingBean2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beans/GreetingBean2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeContext$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeExtension.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeExtension.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scopes/customScope/likeAppScoped/CustomScopeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scopes/customScope/likeAppScoped/CustomScopeContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/servlets/GreetingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlets/GreetingServlet.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +50,7 @@
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
     <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="false" />
+    <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1iQTmISOjYrKqj0xi5ZFb22u2yR" />
@@ -227,7 +242,8 @@
       <workItem from="1602051865861" duration="13733000" />
       <workItem from="1602136102384" duration="3977000" />
       <workItem from="1602259198025" duration="929000" />
-      <workItem from="1602323780123" duration="6455000" />
+      <workItem from="1602323780123" duration="7097000" />
+      <workItem from="1602405037060" duration="16242000" />
     </task>
     <servers />
   </component>
