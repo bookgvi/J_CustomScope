@@ -17,6 +17,7 @@ public class LSSScopeExtension implements Extension {
   public void afterBeanDiscovery(@Observes AfterBeanDiscovery abd, BeanManager bm) {
     ctx = new LSSScopeContext();
     fireContext(bm, ctx);
+    asyncFireContext(bm, ctx);
     abd.addContext(ctx);
   }
 
@@ -27,5 +28,7 @@ public class LSSScopeExtension implements Extension {
   private void fireContext(BeanManager beanManager, LSSScopeContext ctx) {
     beanManager.getEvent().select(LSSScopeContext.class).fire(ctx);
   }
-
+  private void asyncFireContext(BeanManager beanManager, LSSScopeContext ctx) {
+    beanManager.getEvent().select(LSSScopeContext.class).fireAsync(ctx);
+  }
 }
