@@ -1,15 +1,12 @@
 package beans;
 
 import scopes.customScope.LearningStartSuspendScope.LSSScopeContext;
-import scopes.customScope.likeAppScoped.CustomAppScope;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.event.Observes;
 import javax.enterprise.event.ObservesAsync;
-import javax.enterprise.event.Reception;
 
-//@ApplicationScoped // ApplicationScoped(!) - because it is always active in all thread - optimal for synchronous events
-@ApplicationScoped
+@ApplicationScoped // ApplicationScoped(!) - because it is always active in all thread
 public class GreetingBean2 {
   private LSSScopeContext lssScopeContext;
 
@@ -20,12 +17,11 @@ public class GreetingBean2 {
   public void getCtx(@Observes LSSScopeContext ctx) {
     saveLSSScopeContext(ctx);
   }
-
-//  public void asyncGetCtx(@ObservesAsync LSSScopeContext ctx) {
-//    saveLSSScopeContext(ctx);
-//  }
+  public void asyncGetCtx(@ObservesAsync LSSScopeContext ctx) {
+    saveLSSScopeContext(ctx);
+  }
 
   private void saveLSSScopeContext(LSSScopeContext ctx) {
-    if (ctx != null) lssScopeContext = ctx;
+    if (this.lssScopeContext == null) lssScopeContext = ctx;
   }
 }
