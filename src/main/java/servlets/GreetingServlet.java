@@ -34,8 +34,10 @@ public class GreetingServlet extends HttpServlet {
   public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
     String msg = "QQQ", msg1 = "", msg2 = "", msg3;
 
-//    ctx = cdiExt.getContext(); // Directly Injected
-    ctx = greetingBean2.getLssScopeContext(); // In GreetingBean2 we have an Observe method
+    ctx = greetingBean2.getLssScopeContext() != null
+      ? greetingBean2.getLssScopeContext() // In GreetingBean2 we have an Observe method
+      : cdiExt.getContext(); // Directly Injected
+
     ctx.start(String.valueOf(scopeId));
     try {
       msg1 = String.valueOf(greetingBean.getTestID());
