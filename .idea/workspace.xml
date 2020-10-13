@@ -7,13 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bc17ee3-55e9-4daa-a0c2-dae65bbec2d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/beans/GreetingBean2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/beans/GreetingBean2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeExtension.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeExtension.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/GreetingBean2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/GreetingBean2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/LearningStartSuspendScope/LSSScopeExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/LearningStartSuspendScope/LSSScopeExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/beans/GreetingBean2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beans/GreetingBean2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeExtension.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeExtension.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/interceptors/LoggerInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/interceptors/LoggerInterceptor.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -230,7 +224,9 @@
       <workItem from="1602136102384" duration="3977000" />
       <workItem from="1602259198025" duration="929000" />
       <workItem from="1602323780123" duration="7097000" />
-      <workItem from="1602405037060" duration="22690000" />
+      <workItem from="1602405037060" duration="24365000" />
+      <workItem from="1602521375752" duration="310000" />
+      <workItem from="1602574525592" duration="1189000" />
     </task>
     <servers />
   </component>
