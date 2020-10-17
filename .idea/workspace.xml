@@ -7,7 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bc17ee3-55e9-4daa-a0c2-dae65bbec2d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/interceptors/LoggerInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/interceptors/LoggerInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/LearningStartSuspendScope/LSSScopeContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/LearningStartSuspendScope/LSSScopeContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/LearningStartSuspendScope/LSSScopeExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/LearningStartSuspendScope/LSSScopeExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scopes/customScope/StartAndSuspendScope/SuspendableScopeContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scopes/customScope/StartAndSuspendScope/SuspendableScopeContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/GreetingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/GreetingServlet.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -226,7 +230,8 @@
       <workItem from="1602323780123" duration="7097000" />
       <workItem from="1602405037060" duration="24365000" />
       <workItem from="1602521375752" duration="310000" />
-      <workItem from="1602574525592" duration="1189000" />
+      <workItem from="1602574525592" duration="4326000" />
+      <workItem from="1602932101929" duration="3104000" />
     </task>
     <servers />
   </component>

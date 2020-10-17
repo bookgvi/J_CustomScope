@@ -1,16 +1,10 @@
 package servlets;
 
-import beans.Greeting;
 import beans.GreetingBean;
 import beans.GreetingBean2;
 import scopes.customScope.LearningStartSuspendScope.LSSScopeContext;
 import scopes.customScope.LearningStartSuspendScope.LSSScopeExtension;
-import scopes.customScope.StartAndSuspendScope.SuspendableScopeContext;
-import scopes.customScope.StartAndSuspendScope.SuspendableScopeExtension;
 
-import javax.enterprise.event.Observes;
-import javax.enterprise.event.ObservesAsync;
-import javax.enterprise.event.Reception;
 import javax.enterprise.inject.spi.CDI;
 import javax.inject.Inject;
 import javax.servlet.annotation.WebServlet;

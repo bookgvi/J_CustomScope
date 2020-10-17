@@ -1,14 +1,13 @@
 package scopes.customScope.LearningStartSuspendScope;
 
-import scopes.customScope.likeAppScoped.CustomAppScope;
-
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.context.RequestScoped;
+import javax.enterprise.event.Event;
 import javax.enterprise.event.Observes;
 import javax.enterprise.inject.spi.*;
 
 public class LSSScopeExtension implements Extension {
   private LSSScopeContext ctx;
+
+  private Event event;
 
   public void beforeBeanDiscovery(@Observes BeforeBeanDiscovery bbd) {
     bbd.addScope(LSSScope.class, true, false);
