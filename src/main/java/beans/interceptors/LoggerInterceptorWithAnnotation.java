@@ -5,8 +5,8 @@ import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
 import java.util.Arrays;
 
-@Interceptor
 @Logger
+@Interceptor
 public class LoggerInterceptorWithAnnotation {
   @AroundInvoke
   public Object log(InvocationContext ctx) throws Exception {

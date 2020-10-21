@@ -7,7 +7,6 @@ import scopes.customScope.LearningStartSuspendScope.LSSScope;
 import javax.interceptor.Interceptors;
 
 @LSSScope
-@Interceptors({LoggerInterceptorWithAnnotation.class})
 public class GreetingBean implements Greeting {
   private int testID = 0;
   private String msg = "This is message from LSSScopeBean";
@@ -16,6 +15,7 @@ public class GreetingBean implements Greeting {
     this.testID = value;
   }
 
+  @Interceptors({LoggerInterceptorWithAnnotation.class})
   public int getTestID() {
     return this.testID;
   }
