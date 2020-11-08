@@ -2,8 +2,11 @@ package beans;
 
 import beans.interceptors.LoggerInterceptor;
 import beans.interceptors.LoggerInterceptorWithAnnotation;
+import scopes.customScope.LearningStartSuspendScope.IPInfo;
 import scopes.customScope.LearningStartSuspendScope.LSSScope;
 
+import javax.enterprise.inject.Produces;
+import javax.enterprise.inject.spi.InjectionPoint;
 import javax.interceptor.Interceptors;
 
 @LSSScope
@@ -24,4 +27,9 @@ public class GreetingBean implements Greeting {
     return msg;
   }
 
+//  @Produces
+//  @IPInfo
+//  public String getInjectionPointInfo(InjectionPoint injectionPoint) {
+//    return injectionPoint.getMember().getDeclaringClass().getName();
+//  }
 }

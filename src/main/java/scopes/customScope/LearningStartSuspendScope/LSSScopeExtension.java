@@ -20,6 +20,12 @@ public class LSSScopeExtension implements Extension {
     abd.addContext(ctx);
   }
 
+  public void processInjectionPoint(@Observes ProcessInjectionPoint<?, ?> processInjectionPoint, BeanManager beanManager) {
+    InjectionPoint injectionPoint = processInjectionPoint.getInjectionPoint();
+    System.out.printf("InjectionPoint: %s%n", injectionPoint.getMember().getDeclaringClass().getName());
+    fireInjectionPoint(beanManager, injectionPoint);
+  }
+
   public LSSScopeContext getContext() {
     return ctx;
   }
@@ -30,5 +36,9 @@ public class LSSScopeExtension implements Extension {
 
   private void asyncFireContext(BeanManager beanManager, LSSScopeContext ctx) {
     beanManager.getEvent().select(LSSScopeContext.class).fireAsync(ctx);
+  }
+
+  private void fireInjectionPoint(BeanManager beanManager, InjectionPoint injectionPoint) {
+//    beanManager.getEvent().select(LSSScopeContext.class).fire(injectionPoint);
   }
 }
