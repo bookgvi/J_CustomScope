@@ -5,6 +5,7 @@ import beans.GreetingBean2;
 import scopes.customScope.LearningStartSuspendScope.LSSScopeContext;
 import scopes.customScope.LearningStartSuspendScope.LSSScopeExtension;
 
+import javax.enterprise.inject.Instance;
 import javax.enterprise.inject.spi.CDI;
 import javax.inject.Inject;
 import javax.servlet.annotation.WebServlet;
@@ -24,8 +25,12 @@ public class GreetingServlet extends HttpServlet {
   GreetingBean greetingBean;
 
   private GreetingBean2 greetingBean2 = CDI.current().select(GreetingBean2.class).get();
+  @Inject
+  private Instance<GreetingBean2> instance;
 
   public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    GreetingBean2 greetingBean2 = instance.select(GreetingBean2.class).get();
+
     String msg = "QQQ", msg1 = "", msg2 = "", msg3;
 
     ctx = greetingBean2.getLssScopeContext() != null

@@ -8,12 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc17ee3-55e9-4daa-a0c2-dae65bbec2d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/StartAndSuspendScope/SuspendableScopeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/scopes/customScope/StartAndSuspendScope/SuspendableScopeContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/beans/interceptors/LoggerInterceptorWithAnnotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/beans/interceptors/LoggerInterceptorWithAnnotation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/servlets/GreetingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CustomScope_war_exploded/WEB-INF/classes/servlets/GreetingServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/GreetingBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/GreetingBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scopes/customScope/LearningStartSuspendScope/LSSScopeContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scopes/customScope/StartAndSuspendScope/SuspendableScopeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scopes/customScope/StartAndSuspendScope/SuspendableScopeContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/GreetingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/GreetingServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans/GreetingBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans/interceptors/LoggerInterceptorWithAnnotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beans/interceptors/LoggerInterceptorWithAnnotation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/servlets/GreetingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlets/GreetingServlet.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -296,7 +295,13 @@
       <workItem from="1603133489500" duration="3323000" />
       <workItem from="1603137433068" duration="596000" />
       <workItem from="1603218673683" duration="7000" />
-      <workItem from="1603294040022" duration="1246000" />
+      <workItem from="1603294040022" duration="2125000" />
+      <workItem from="1603378961514" duration="14000" />
+      <workItem from="1604258532693" duration="265000" />
+      <workItem from="1604493232011" duration="467000" />
+      <workItem from="1604495849926" duration="112000" />
+      <workItem from="1604750236773" duration="1901000" />
+      <workItem from="1604844579402" duration="1245000" />
     </task>
     <servers />
   </component>
