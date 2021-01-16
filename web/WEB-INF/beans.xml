@@ -7,5 +7,6 @@
         bean-discovery-mode="all">
     <decorators>
         <class>beans.TMP_Decorators.DecoratorAccountLogger</class>
+        <class>beans.GreetingsDecorator.GreetingsDecorator</class>
     </decorators>
 </beans>
