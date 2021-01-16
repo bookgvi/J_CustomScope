@@ -58,7 +58,7 @@ public class GreetingServlet extends HttpServlet {
     }
     resp.getWriter().printf("Before suspend: %s, After: %s%n", msg1, msg2);
     resp.getWriter().printf("%s%n", msg3);
-    resp.getWriter().printf("%s%n", greetingBean2.getInjectionPoint());
+//    resp.getWriter().printf("%s%n", greetingBean2.getInjectionPoint());
 //    resp.getWriter().printf("%s%n", msg4);
   }
 
